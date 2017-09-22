@@ -4,6 +4,9 @@ def vu_filtro_anaerobio():
     num_contribuintes=int(input()) #numero de contribuintes
     desp_hab=float(input()) #despejos por habitantes
     tem_det_hidraulico=float(input()) #tempo de detenção hidraulico
-    volume_filtro=(1,6*num_contribuintes*desp_hab*tem_det_hidraulico)
+    volume_filtro=(1.6*num_contribuintes*desp_hab*tem_det_hidraulico)
     print("O volume do filtro anaeróbio é:",volume_filtro)
+    altura=float(input())
+    ab=volume_filtro/altura
+    print("Área da basa é:","%.2F"%ab)
 vu_filtro_anaerobio()
