@@ -1,12 +1,12 @@
 # projeto-de-ic
 projeto de ic para a empresa teia serviços ambientais
 def vu_filtro_anaerobio():
-    num_contribuintes=int(input()) #numero de contribuintes
-    desp_hab=float(input()) #despejos por habitantes
-    tem_det_hidraulico=float(input()) #tempo de detenção hidraulico
-    volume_filtro=(1.6*num_contribuintes*desp_hab*tem_det_hidraulico)
-    print("O volume do filtro anaeróbio é:",volume_filtro)
-    altura=float(input())
-    ab=volume_filtro/altura
-    print("Área da basa é:","%.2F"%ab)
+    numero_de_contribuintes=int(input()) #numero de contribuintes
+    despejos_por_habitante=float(input()) #despejos por habitantes
+    tempo_de_detençao_hidraulico=float(input()) #tempo de detenção hidraulico
+    volume_filtro=(1.6*numerode_de_contribuintes*despejos_por_habitante*tempo_de_detençao_hidraulico)
+    print("O volume do filtro anaeróbio é:",volume_filtro,"L")
+    altura_em_metros=float(input())
+    ab=volume_filtro/altura_em_metros
+    print("Área da basa é:",ab,"m²")
 vu_filtro_anaerobio()
