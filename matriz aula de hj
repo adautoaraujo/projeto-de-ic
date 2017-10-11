@@ -1,0 +1,24 @@
+def recebe(n_lin):
+    linha = []
+    for i in range(n_lin):
+        linha.append(int(input()))
+    return linha
+def matriz(n_lin, n_col):
+    matriz = []
+    for i in range(n_lin):
+        matriz.append(recebe(n_col))
+    return matriz
+def soma(a,b):
+    c =[]
+    for n_lin in range(len(a)):
+        linha =[]
+        for n_col in range(len(a[0])):
+            linha.append(a[n_lin][n_col]+b[n_lin][n_col])
+        c.append(linha)
+    return c
+a=matriz(2,2)
+b=matriz(2,2)
+c=soma(a,b)
+print(a)
+print(b)
+print(c)
